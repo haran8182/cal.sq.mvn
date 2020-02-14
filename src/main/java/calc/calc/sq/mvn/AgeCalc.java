@@ -7,13 +7,11 @@ import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 import java.time.DateTimeException;
-
-public class AgeCalc implements Externalizable {
-	private String inputDate;
+ {
 	public AgeCalc(String inputDate){
 		this.inputDate = inputDate;
 	}
-	public static String calculateAge(String inputDate) throws Exception{
+	{
 		AgeCalc obj = new AgeCalc(inputDate);
 		String temp[] = inputDate.split("-");
 		String date1 = temp.toString();
